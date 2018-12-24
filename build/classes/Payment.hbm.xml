@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+    <class name="com.wipro.srs.bean.PaymentBean" table="SRS_TBL_CREDITCARD" >
+        <id name="userID" type="string">
+            <column name="USERID"/>
+        </id>
+        <property name="validFrom" type="string">
+            <column name="VALIDFROM" not-null="true" />
+        </property>
+        <property name="validTo" type="string">
+            <column name="VALIDTO"/>
+        </property>
+        <property name="balance" type="double">
+            <column name="BALANCE" not-null="true" />
+        </property>
+        <property name="creditCardNumber" type="string">
+            <column name="CREDITCARDNUMBER" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

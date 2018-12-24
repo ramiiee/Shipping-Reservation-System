@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+    <class name="com.wipro.srs.bean.CredentialsBean" table="SRS_TBL_User_Credentials" >
+        <id name="userID" type="string">
+            <column name="USERID" not-null="true" />
+        </id>
+        <property name="password" type="string">
+            <column name="PASSWORD" />
+        </property>
+        <property name="userType" type="string">
+            <column name="USERTYPE" />
+        </property>
+        <property name="loginStatus" type="int">
+            <column name="LOGINSTATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

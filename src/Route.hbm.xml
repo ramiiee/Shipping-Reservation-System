@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+    <class name="com.wipro.srs.bean.RouteBean" table="SRS_TBL_ROUTE" >
+        <id name="routeID" type="string">
+            <column name="ROUTEID" not-null="true" />
+        </id>
+        <property name="source" type="string">
+            <column name="SOURCE" />
+        </property>
+        <property name="destination" type="string">
+            <column name="DESTINATION" />
+        </property>
+        <property name="travelDuration" type="string">
+            <column name="TRAVELDURATION" />
+        </property>
+        <property name="fare" type="double">
+            <column name="FARE" />
+        </property>
+    </class>
+</hibernate-mapping>

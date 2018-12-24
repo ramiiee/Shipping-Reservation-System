@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ <hibernate-mapping>
+    <class name="com.wipro.srs.bean.ProfileBean" table="SRS_TBL_User_Profile" >
+        <id name="userID" type="string">
+            <column name="USERID" />
+            </id> 
+      <property name="firstName" type="string">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="LASTNAME" />
+        </property>
+        <property name="dateOfBirth" type="date">
+            <column name="DATEOFBIRTH" />
+        </property>
+        <property name="gender" type="string">
+            <column name="GENDER" />
+        </property>
+        <property name="street" type="string">
+            <column name="STREET" />
+        </property>
+        <property name="location" type="string">
+            <column name="LOCATION" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" />
+        </property>
+        <property name="pincode" type="string">
+            <column name="PINCODE" />
+        </property>
+        <property name="mobileNo" type="string">
+            <column name="MOBILENO" />
+        </property>
+        <property name="emailID" type="string">
+            <column name="EMAILID" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" />
+        </property>
+    </class>
+</hibernate-mapping>

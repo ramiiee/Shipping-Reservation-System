@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+    <class name="com.wipro.srs.bean.PassengerBean" table="SRS_TBL_PASSENGER" >
+         
+          <id name="name" type="string">
+            <column name="NAME" />
+            </id>
+        <property name="reservationID" type="string">
+            <column name="RESERVATIONID" not-null="true" />
+        </property>
+        <property name="scheduleID" type="string">
+            <column name="SCHEDULEID" />
+        </property>
+       
+         <property name="age" type="int">
+            <column name="AGE" />
+        </property>
+     
+        <property name="gender" type="string">
+            <column name="GENDER" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

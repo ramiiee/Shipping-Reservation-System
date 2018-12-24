@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+    <class name="com.wipro.srs.bean.ShipBean" table="SRS_TBL_SHIP" >
+        <id name="shipID" type="string">
+            <column name="SHIPID" not-null="true" />
+        </id>
+        <property name="shipName" type="string">
+            <column name="SHIPNAME" />
+        </property>
+        <property name="seatingCapacity" type="int">
+            <column name="SEATINGCAPACITY" />
+        </property>
+        <property name="reservationCapacity" type="int">
+            <column name="RESERVATIONCAPACITY" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+    <class name="com.wipro.srs.bean.ReservationBean" table="SRS_TBL_RESERVATION" >
+        <id name="reservationID" type="string">
+            <column name="RESERVATIONID" not-null="true" />
+        </id>
+        <property name="scheduleID" type="string">
+            <column name="SCHEDULEID" />
+        </property>
+        <property name="userID" type="string">
+            <column name="USERID" />
+        </property>
+        <property name="bookingDate" type="date">
+            <column name="BOOKINGDATE" />
+        </property>
+        <property name="journeyDate" type="date">
+            <column name="JOURNEYDATE" />
+        </property>
+        <property name="noOfSeats" type="int">
+            <column name="NOOFSEATS" />
+        </property>
+        <property name="totalFare" type="double">
+            <column name="TOTALFARE" />
+        </property>
+        <property name="bookingStatus" type="string">
+            <column name="BOOKINGSTATUS" />
+        </property>
+    </class>
+</hibernate-mapping>
